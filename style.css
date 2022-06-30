@@ -1,0 +1,252 @@
+/*----------------------------------------------------------------------------------
+
+	Template Name: Portfolio Personal Website
+	Template URL: http://www.abm.com
+	Description: Personal Website
+	Author: Md. Majidul Islam
+	Author URL: http://www.ab-majid.info
+	License: GNU General Public 
+	Version: 2020.0.1
+	Tags: ;
+-----------------------------------------------------------------------------------
+
+	1. Typography  10-50
+	2. Header Area  51-150
+	3. Getting Started
+	4. Design Area
+	5. Community Area
+	6. Subscribe Area
+	7. Download Area
+	8. Footer Area
+-----------------------------------------------------------------------------------*/
+
+
+/************** 1. Typography ************************/
+a, 
+ul{
+	margin: 0;
+	text-decoration: none;
+}
+p{
+	color: #848789;
+	line-height: 25px;
+}
+
+body{
+	margin:0; 
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+}
+/************ Header Area ************/
+.mynav{
+	background-color: rgba(0, 0, 0, .4);
+}
+.span{
+	color: #fe320a;
+}
+.btn-danger{
+	background-color: #fe320a;
+}
+header{
+	background-image: url("images/head.png");
+	height: 100vh;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	z-index: 1;
+}
+header::after{
+	content: '';
+	display: block;
+	clear: both;
+	background-color: rgba(0, 0, 0, .4);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
+
+/* About US */
+.hr{
+	border: none;
+	height: 2px;
+	background-color: #fe320a;
+}
+h4{
+	position: relative;
+}
+
+h4::after{
+	content: '';
+	display: block;
+	clear: both;
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	background-color: #fe320a;
+	position: absolute;
+	bottom: -21px;
+	left: 49%;
+}
+.pic{
+	position: relative;
+}
+.social{
+	background-color: #fe320a;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+/* More About Us */
+.more-about{
+	background-image: url("images/aboutUs.png");
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+.more-about::after{
+	content: '';
+	display: block;
+	clear: both;
+	background-color: rgba(0, 0, 0, .4);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
+.more-about a{
+	border: 2px solid white;
+	border-radius: 5px;
+}
+
+/* Our Services */
+.service a{
+	font-size: 35px;
+	color: #fe320a;
+}
+
+/* My Skill */
+.skill{
+	background-color: #f3f3f3;
+}
+.client{
+	background-image: url("images/client.png");
+	font-size: 20px;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+.client::after{
+	content: '';
+	display: block;
+	clear: both;
+	background-color: rgba(0, 0, 0, .5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
+.client a{
+	border: 2px solid white;
+	border-radius: 50%;
+	color: white;
+	padding: 5px 6px;
+}
+
+/* Our Portfolio */
+.portfolio .pic{
+	position: relative;
+}
+.portfolio .pic .ovr{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.portfolio .pic .ovr a{
+	font-size: 30px;
+}
+.portfolio .pic:hover .ovr{
+	display: block;
+}
+
+/* My Team */
+.team{
+	background-color: #e1e1e1;
+}
+.team .pic img{
+	border-bottom: 5px solid #fe320a;
+}
+.pic img:hover + .overlay{
+	display: block;
+}
+.overlay{
+	background-color: rgba(255, 0, 0, .3);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: none;
+}
+.overlay .team-social{
+	background-color: rgba(255, 0, 0, .7);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+/* Team Information */
+.team-info{
+	background-image: url("images/testimonial.png");
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+.team-info::after{
+	content: '';
+	display: block;
+	clear: both;
+	background-color: rgba(0, 0, 0, .4);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
+/************** Contact Us ************************/
+.contact{
+	background-image: url("images/contact.png");
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+.contact::after{
+	content: '';
+	display: block;
+	clear: both;
+	background-color: rgba(0, 0, 0, .4);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
+.contact input::placeholder,
+.contact textarea::placeholder{
+	color: white;
+}
